@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    margin-top: 0px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: rgb(174, 168, 168);
+    height: 200px;
+    width: 100%;
+}
+.btn{
+    background-color: black;
+    color: rgb(192, 190, 190);
+    font-size: 25px;
+    cursor: pointer;
+    transition: 
+     scale 0.25s ease-in,
+     opacity 0.25s ease-in,
+     filter 0.25s ease-in;
+     height: 66px;
+     width: 160px;
+}
+.btn:hover{
+    scale: 1.2;
+}
+.btns:has(.btn:hover).btn:not(:hover){
+    scale: 0.8;
+    opacity: 0.8;
+    filter: rgb(47, 47, 47) blur(4px);
+}
+.name{
+    color: rgb(192, 190, 190);
+    font-size: 130px;
+    text-align: center;
+}
