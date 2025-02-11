@@ -1,9 +1,12 @@
-/* 
-body{
+/* black */
+
+.ten{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: black;
-    margin-top: 0px;
-}
-.btns{
+ }
+.btns0{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +15,7 @@ body{
     height: 200px;
     width: 100%;
 }
-.btn{
+.btn1{
     background-color: black;
     color: rgb(192, 190, 190);
     font-size: 25px;
@@ -24,20 +27,100 @@ body{
      height: 66px;
      width: 160px;
 }
-.btn:hover{
+.btn1:hover{
     scale: 1.2;
 }
-.btns:has(.btn:hover).btn:not(:hover){
+.btns0:has(.btn1:hover).btn1:not(:hover){
     scale: 0.8;
     opacity: 0.8;
     filter: rgb(47, 47, 47) blur(4px);
 }
-.name{
+.name0{
     color: rgb(192, 190, 190);
     font-size: 130px;
     text-align: center;
-} */
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.centr5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.name6 {
+    color: #ECF0F1; 
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+    .btns0 {
+        flex-direction: column; 
+        height: auto;
+        padding: 2rem;
+    }
 
+    .btn1 {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .name0 {
+        font-size: 5rem;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .centr5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name6 {
+        color: #ECF0F1; 
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width: 480px) {
+    .name0 {
+        font-size: 3rem;
+    }
+
+    .btn1 {
+        font-size: 1rem;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .centr5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name6 {
+        color: #ECF0F1; 
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* orange */
 
 body {
     background-color: #1A1A2E; 
@@ -92,6 +175,24 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+.centr9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.name8 {
+    color: #ECF0F1; 
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
 @media (max-width: 768px) {
     .btns {
         flex-direction: column; 
@@ -108,6 +209,23 @@ body {
     .name {
         font-size: 5rem;
     }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .centr9{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name8 {
+        color: #ECF0F1; 
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
 }
 
 @media (max-width: 480px) {
@@ -118,15 +236,34 @@ body {
     .btn {
         font-size: 1rem;
     }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .centr9{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name8 {
+        color: #ECF0F1; 
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
 }
 
-/* body {
+/* green */
+
+body {
     background-color: #2C3E50; 
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
 
-.btns {
+.btns2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,11 +274,12 @@ body {
     padding: 1rem;
 }
 
-.btn {
+.btn3 {
     background-color: #16A085; 
     color: #fff; 
     font-size: 1.5rem;
     padding: 0.8rem 2rem;
+    margin: 15px;
     cursor: pointer;
     transition: 
         transform 0.25s ease-in,
@@ -154,18 +292,18 @@ body {
     border-radius: 8px; 
 }
 
-.btn:hover {
+.btn3:hover {
     transform: scale(1.2);
     background-color: #1ABC9C; 
 }
 
-.btns:has(.btn:hover) .btn:not(:hover) {
+.btns2:has(.btn3:hover) .btn3:not(:hover) {
     transform: scale(0.8);
     opacity: 0.8;
     filter: rgb(47, 47, 47) blur(4px);
 }
 
-.name {
+.name4 {
     color: #ECF0F1; 
     font-size: 8rem;
     text-align: center;
@@ -173,34 +311,82 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+.centr{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+.name5 {
+    color: #ECF0F1; 
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
 
 @media (max-width: 768px) {
-    .btns {
+    .btns2 {
         flex-direction: column;
         height: auto;
         padding: 2rem;
     }
 
-    .btn {
+    .btn3 {
         font-size: 1.2rem;
         padding: 1rem 2rem;
         margin-bottom: 1rem;
     }
 
-    .name {
+    .name4 {
         font-size: 5rem;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .centr{
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+    }
+    .name5 {
+        color: #ECF0F1; 
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
 }
 
 @media (max-width: 480px) {
-    .name {
+    .name4 {
         font-size: 3rem;
     }
 
-    .btn {
+    .btn3 {
         font-size: 1rem;
     }
-} */
-
-
-
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .centr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name5 {
+        color: #ECF0F1; 
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+}
